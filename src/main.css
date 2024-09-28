@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --black-100: #141618;
+    --black-90: #2A2E33;
+
+    --white-100: #EDF6FF;
+    --white-50: rgba(237, 246, 255, 0.5);
+    --brand-gradient-100: linear-gradient(90deg, hsla(305, 48%, 63%, 1) 0%, hsla(251, 56%, 72%, 1) 100%);
+    --brand-gradient-10: linear-gradient(90deg, hsla(305, 48%, 63%, .1) 0%, hsla(251, 56%, 72%, .1) 100%);
+    --brand-gradient-5: linear-gradient(90deg, hsla(305, 48%, 63%, .05) 0%, hsla(251, 56%, 72%, .05) 100%);
+}
+
+body{
+    background-color: var(--black-90);
+}
+
+h1, h2, h3, h4, h5, h6, a{
+    font-family: "Manrope", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a{
+    color: var(--black-100);
+}
+
+h1{
+    font-size:61px;
+    line-height: 91px;
+}
+
+h2{
+    font-size:51px;
+    line-height: 76px;
+}
+
+h3{
+    font-size:43px;
+    line-height: 64px;
+}
+
+h4{
+    font-size:36px;
+    line-height: 54px;
+}
+
+h5{
+    font-size:30px;
+    line-height: 45px;
+}
+
+h6{
+    font-size:25px;
+    line-height: 37px;
+}
+
+p{
+    font-family: "Montserrat", sans-serif;
+    font-size:19px;
+    line-height: 31px;
+}
+
+a{
+    font-size:18px;
+    line-height: 31px;
+}

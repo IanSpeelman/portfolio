@@ -1,0 +1,25 @@
+.icon{
+    width: 32px;
+    height: 32px;
+}
+
+
+.link{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    background: var(--brand-gradient-5);
+    width: fit-content;
+    padding: 16px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    outline: 1px solid #CE75C6;
+}
+
+.text{
+    margin-left: 16px;
+    background: var(--brand-gradient-100);
+    color: rgba(0,0,0,0);
+    -webkit-background-clip: text;
+}
