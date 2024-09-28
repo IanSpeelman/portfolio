@@ -1,0 +1,10 @@
+.container{
+    display: flex;
+    gap: 16px;
+}
+
+.tag{
+    border-radius: 50px;
+    border: 2px solid var(--primary-75);
+    padding: 8px 16px;
+}

@@ -18,7 +18,7 @@
     right: 0;
     bottom: -1px;
     z-index: -1;
-    background: var(--brand-gradient-100);
+    background: var(--brand-gradient-50);
 }
 
 .title{

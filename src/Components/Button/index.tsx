@@ -7,7 +7,6 @@ type ButtonProps = {
 }
 
 export default function Button({ text, link, icon }: ButtonProps) {
-    console.log(icon)
     return <a className={styles.link} href={link}>
         <svg width="0" height="0">
             <defs>

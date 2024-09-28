@@ -53,6 +53,10 @@
     color: var(--white-50);
 }
 
+.title > *:first-child {
+    text-decoration: underline;
+}
+
 .links > *{
     color: var(--white-100);
     width: max-content;
