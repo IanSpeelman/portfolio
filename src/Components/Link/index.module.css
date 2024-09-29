@@ -1,0 +1,31 @@
+.icon{
+    width: 32px;
+    height: 32px;
+}
+
+
+.link{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.text{
+    margin-left: 16px;
+    background: var(--brand-gradient-100);
+    color: rgba(0,0,0,0);
+    -webkit-background-clip: text;
+}
+
+.link:hover{
+    background: var(--brand-gradient-5);
+}
+
+.link:active{
+    background: var(--brand-gradient-10);
+}

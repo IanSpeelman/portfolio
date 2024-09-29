@@ -12,7 +12,10 @@
     --black-90: #2A2E33;
 
     --white-100: #EDF6FF;
+    --white-75: rgba(237, 246, 255, 0.75);
     --white-50: rgba(237, 246, 255, 0.5);
+    --white-10: rgba(237, 246, 255, 0.1);
+    --white-5: rgba(237, 246, 255, 0.05);
 
     --primary-75: rgba(0, 123, 255, .75);
 
@@ -22,6 +25,9 @@
     --brand-gradient-50: linear-gradient(90deg, hsla(305, 48%, 63%, .5) 0%, hsla(251, 56%, 72%, .5) 100%);
     --brand-gradient-10: linear-gradient(90deg, hsla(305, 48%, 63%, .1) 0%, hsla(251, 56%, 72%, .1) 100%);
     --brand-gradient-5: linear-gradient(90deg, hsla(305, 48%, 63%, .05) 0%, hsla(251, 56%, 72%, .05) 100%);
+
+
+    --brand-gradient-50-90deg: linear-gradient(180deg, hsla(305, 48%, 63%, .5) 0%, hsla(251, 56%, 72%, .5) 100%);
 }
 
 body{
