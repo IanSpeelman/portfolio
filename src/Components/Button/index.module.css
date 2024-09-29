@@ -31,3 +31,10 @@
 .link:active{
     background: var(--brand-gradient-10);
 }
+
+@media screen and (max-width: 1150px){
+    .link{
+        width: max-content;
+    }
+    
+}

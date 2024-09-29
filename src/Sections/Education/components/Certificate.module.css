@@ -33,5 +33,21 @@
     width: fit-content;
 }
 
-.title{
+@media screen and (max-width: 1150px){
+    .container{
+        flex-direction: column;
+    }
+
+    .left{
+        flex-direction: row;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        flex-direction: row;
+    }
 }

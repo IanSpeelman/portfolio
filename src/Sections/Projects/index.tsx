@@ -6,7 +6,7 @@ export default function Projects() {
 
     let count = projects.length
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='projects'>
             <h2 className={styles.title}>Projects</h2>
             {projects.map(project => {
                 count--

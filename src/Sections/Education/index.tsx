@@ -7,8 +7,8 @@ export default function Education() {
 
     let count = certificates.length
     return (
-        <div className={styles.container}>
-            <h2 className={styles.title}>Projects</h2>
+        <div className={styles.container} id='education'>
+            <h2 className={styles.title}>Education</h2>
             {certificates.map(certificate => {
                 count--
                 return (

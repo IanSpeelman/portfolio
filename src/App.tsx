@@ -4,6 +4,7 @@ import Education from './Sections/Education'
 import Header from './Sections/Header'
 import Hero from './Sections/Hero'
 import Projects from './Sections/Projects'
+import Footer from './Sections/Footer'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
             <Projects />
             <Education />
             <Contact />
+            <Footer />
         </>
     )
 }

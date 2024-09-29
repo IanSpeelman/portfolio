@@ -5,6 +5,8 @@
     flex-direction: column;
     align-items: center;
     gap: 80px;
+    width: 100%;
+    min-height: 86vh;
 }
 
 .title{
@@ -15,7 +17,6 @@
 .line{
     width: 1px;
     background: var(--brand-gradient-50-90deg);
-    flex: 1 1 auto;
 }
 
 .center{
@@ -24,6 +25,7 @@
     gap: 32px;
     justify-content: center;
     align-items: stretch;
+    width: 100%;
 }
 
 .form{
@@ -31,8 +33,8 @@
     flex-direction: column;
     gap: 16px;
     color: var(--white-100);
-    width: 400px;
     padding: 0 64px;
+    width: 600px;
 }
 
 .links{
@@ -59,4 +61,20 @@
     border-radius: 8px;
     border:0;
     color: var(--white-100);
+}
+
+@media screen and (max-width: 1300px){
+    .container{
+        padding: 64px 32px;
+    }
+}
+
+@media screen and (max-width: 1150px){
+.center{
+    flex-direction: column;
+}
+.form{
+    width: inherit;
+    padding: 0;
+}
 }

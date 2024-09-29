@@ -10,6 +10,7 @@
 :root{
     --black-100: #141618;
     --black-90: #2A2E33;
+    --black-50: rgba(18, 23, 29, .5);
 
     --white-100: #EDF6FF;
     --white-75: rgba(237, 246, 255, 0.75);
@@ -30,6 +31,10 @@
     --brand-gradient-50-90deg: linear-gradient(180deg, hsla(305, 48%, 63%, .5) 0%, hsla(251, 56%, 72%, .5) 100%);
 }
 
+html{
+        scroll-behavior: smooth;
+    scroll-padding-top: 7vh;
+}
 body{
     background-color: var(--black-90);
 }

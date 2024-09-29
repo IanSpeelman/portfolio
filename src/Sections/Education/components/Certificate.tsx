@@ -13,7 +13,7 @@ export default function Certificate({ certificate }: certificateProps) {
         <div className={styles.container}>
             <div className={styles.left}>
                 <img className={styles.image} src={`../../src/Assets/${certificate.image}`} />
-                <div className={styles.buttons}>
+                <div className={`${styles.buttons} ${styles.desktop}`}>
                     <Button link={certificate.certificate} text="Certificate" icon={icons.graduationCap.path} />
                     <Button link={certificate.website} text="Website" icon={icons.globe.path} />
                 </div>
@@ -22,6 +22,10 @@ export default function Certificate({ certificate }: certificateProps) {
                 <h3 className={styles.title}>{certificate.title}</h3>
                 <TagList tags={certificate.tags} />
                 <p>{certificate.description}</p>
+                <div className={`${styles.buttons} ${styles.mobile}`}>
+                    <Button link={certificate.certificate} text="Certificate" icon={icons.graduationCap.path} />
+                    <Button link={certificate.website} text="Website" icon={icons.globe.path} />
+                </div>
             </div>
         </div>
     )

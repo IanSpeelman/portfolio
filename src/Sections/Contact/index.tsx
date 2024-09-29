@@ -5,7 +5,7 @@ import { icons } from '../../Utils/icons'
 export default function Contact() {
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='contact'>
             <h2 className={styles.title}>Contact</h2>
             <div className={styles.center}>
                 <div className={styles.form}>

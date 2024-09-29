@@ -13,7 +13,7 @@ export default function Project({ project }: projectProps) {
         <div className={styles.container}>
             <div className={styles.left}>
                 <img className={styles.image} src={`../../src/Assets/Projects/${project.image}`} />
-                <div className={styles.buttons}>
+                <div className={`${styles.buttons} ${styles.desktop}`}>
                     <Button link={project.github} text="Github" icon={icons.github.path} />
                     <Button link={project.demo} text="Live Demo" icon={icons.globe.path} />
                 </div>
@@ -22,6 +22,10 @@ export default function Project({ project }: projectProps) {
                 <h3 className={styles.title}>{project.title}</h3>
                 <TagList tags={project.tags} />
                 <p>{project.description}</p>
+                <div className={`${styles.buttons} ${styles.mobile}`}>
+                    <Button link={project.github} text="Github" icon={icons.github.path} />
+                    <Button link={project.demo} text="Live Demo" icon={icons.globe.path} />
+                </div>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 .container{
-    min-height: 93vh;
+    min-height: 100vh;
     background-color: var(--black-100);
     display: flex;
     justify-content: center;
@@ -70,4 +70,35 @@
     flex-wrap: wrap;
     justify-content: center;
 
+}
+
+
+
+@media screen and (max-width: 1150px){
+    .hero{
+        flex-direction: column;
+    }
+    .image{
+        width: 160px;
+        height: 160px;
+    }
+    .title > h2{
+        font-size: 41px;
+        line-height: 37px;
+    }
+    .title > h3{
+        font-size: 33px;
+        line-height: 37px;
+    }
+    .info{
+        gap: 32px;
+    }
+}
+@media screen and (max-width: 900px){
+    .hero{
+        gap: 32px;
+    }
+    .info > p {
+        line-height: 21px;
+    }
 }
