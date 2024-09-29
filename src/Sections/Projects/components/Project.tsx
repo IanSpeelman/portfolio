@@ -12,7 +12,7 @@ export default function Project({ project }: projectProps) {
     return (
         <div className={styles.container}>
             <div className={styles.left}>
-                <img className={styles.image} src={`../../../Assets/Projects/${project.image}`} />
+                <img className={styles.image} src={`../../src/Assets/Projects/${project.image}`} />
                 <div className={styles.buttons}>
                     <Button link={project.github} text="Github" icon={icons.github.path} />
                     <Button link={project.demo} text="Live Demo" icon={icons.globe.path} />

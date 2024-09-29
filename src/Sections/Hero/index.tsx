@@ -1,4 +1,4 @@
-import profile_picture from '../../../public/Assets/profile_picture.jpg'
+import profile_picture from '../../../src/Assets/profile_picture.jpg'
 import Button from '../../Components/Button'
 import styles from './index.module.css'
 import { icons } from '../../Utils/icons'

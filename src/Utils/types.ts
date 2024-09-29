@@ -5,5 +5,13 @@ export type project = {
     github: string,
     demo: string,
     tags: string,
+}
 
+export type certificate = {
+    title: string,
+    description: string,
+    image: string,
+    certificate: string,
+    website: string,
+    tags: string,
 }
