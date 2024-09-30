@@ -12,7 +12,7 @@ export default function Certificate({ certificate }: certificateProps) {
     return (
         <div className={styles.container}>
             <div className={styles.left}>
-                <img className={styles.image} src={`../../src/Assets/${certificate.image}`} />
+                <img className={styles.image} src={`Assets/${certificate.image}`} />
                 <div className={`${styles.buttons} ${styles.desktop}`}>
                     <Button link={certificate.certificate} text="Certificate" icon={icons.graduationCap.path} />
                     <Button link={certificate.website} text="Website" icon={icons.globe.path} />

@@ -1,4 +1,4 @@
-import profile_picture from '../../../src/Assets/profile_picture.jpg'
+import profile_picture from '../../../public/Assets/profile_picture.jpg'
 import Button from '../../Components/Button'
 import styles from './index.module.css'
 import { icons } from '../../Utils/icons'
@@ -6,7 +6,7 @@ import { icons } from '../../Utils/icons'
 
 export default function Hero() {
     return (
-        <div className={styles.container} id='introduction'>
+        <div className={styles.container}>
             <div className={styles.hero}>
                 <div className={styles.imagecontainer}>
                     <img className={styles.image} src={profile_picture} alt='Profile picture' />
@@ -18,9 +18,9 @@ export default function Hero() {
                     </div>
                     <p>A self-taught full-stack developer with a passion for creating dynamic and user-friendly digital experiences. Explore my portfolio to see how I can help bring your vision to life.</p>
                     <div className={styles.links}>
-                        <Button text="IanSpeelman" link="http://github.com/ianspeelman" icon={icons.github.path} />
-                        <Button text="Ian Speelman" link="https://www.linkedin.com/in/ian-speelman-6200aa132" icon={icons.linkedin.path} />
-                        <Button text="Ianspeelman@gmail.com" link="mailto:ianspeelman@gmail.com" icon={icons.mail.path} />
+                        <Button text="Ian Speelman" link="http://github.com/ianspeelman" icon={icons.github.path} />
+                        <Button text="Ian Speelman" link="http://github.com/ianspeelman" icon={icons.linkedin.path} />
+                        <Button text="Ian Speelman" link="http://github.com/ianspeelman" icon={icons.mail.path} />
                     </div>
                 </div>
 
