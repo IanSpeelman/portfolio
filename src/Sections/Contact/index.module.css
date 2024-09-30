@@ -56,11 +56,23 @@
 }
 
 .button{
-    background: var(--brand-gradient-100);
+    background: var(--brand-gradient-75);
     padding: 16px;
     border-radius: 8px;
     border:0;
     color: var(--white-100);
+}
+
+.button:hover{
+    background: var(--brand-gradient-90);
+}
+
+.button:active{
+    background: var(--brand-gradient-100);
+}
+
+.error{
+    outline: 1px solid rgba(255,0,0,.7);
 }
 
 @media screen and (max-width: 1300px){

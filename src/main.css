@@ -23,6 +23,8 @@
     --highlight-100: #CE75C6;
 
     --brand-gradient-100: linear-gradient(90deg, hsla(305, 48%, 63%, 1) 0%, hsla(251, 56%, 72%, 1) 100%);
+    --brand-gradient-90: linear-gradient(90deg, hsla(305, 48%, 63%, .9) 0%, hsla(251, 56%, 72%, .9) 100%);
+    --brand-gradient-75: linear-gradient(90deg, hsla(305, 48%, 63%, .75) 0%, hsla(251, 56%, 72%, .75) 100%);
     --brand-gradient-50: linear-gradient(90deg, hsla(305, 48%, 63%, .5) 0%, hsla(251, 56%, 72%, .5) 100%);
     --brand-gradient-10: linear-gradient(90deg, hsla(305, 48%, 63%, .1) 0%, hsla(251, 56%, 72%, .1) 100%);
     --brand-gradient-5: linear-gradient(90deg, hsla(305, 48%, 63%, .05) 0%, hsla(251, 56%, 72%, .05) 100%);
