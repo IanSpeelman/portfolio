@@ -86,15 +86,10 @@ h6{
     color: var(--white-100);
 }
 
-p, a{
+p, a, label{
     font-family: "Montserrat", sans-serif;
     font-size:19px;
     line-height: 31px;
     color: var(--white-100);
 }
 
-/*a{*/
-/*    font-size:18px;*/
-/*    line-height: 31px;*/
-/*    color: var(--white-100);*/
-/*}*/
