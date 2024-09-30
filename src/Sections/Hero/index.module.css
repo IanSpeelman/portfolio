@@ -97,6 +97,7 @@
 @media screen and (max-width: 900px){
     .hero{
         gap: 32px;
+        margin: 0 32px;
     }
     .info > p {
         line-height: 21px;
