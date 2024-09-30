@@ -9,14 +9,13 @@ export default function Contact() {
     const [message, setMessage] = useState("")
 
     async function handleSubmit() {
-        const url = 'http://api.mailjet.com/v3.1/send';
+        const url = 'https://api.mailjet.com/v3.1/send';
         const apiKey = import.meta.env.VITE_API_KEY;
         const secretKey = import.meta.env.VITE_SECRET_KEY;
 
         const headers = {
             'Content-Type': 'application/json',
             'Authorization': 'Basic ' + btoa(apiKey + ':' + secretKey),
-
         }
 
         const body = JSON.stringify({
