@@ -39,7 +39,7 @@ body{
     background-color: var(--black-90);
 }
 
-h1, h2, h3, h4, h5, h6, a{
+h1, h2, h3, h4, h5, h6{
     font-family: "Manrope", sans-serif;
     color: var(--white-100);
 }
@@ -84,15 +84,15 @@ h6{
     color: var(--white-100);
 }
 
-p{
+p, a{
     font-family: "Montserrat", sans-serif;
     font-size:19px;
     line-height: 31px;
     color: var(--white-100);
 }
 
-a{
-    font-size:18px;
-    line-height: 31px;
-    color: var(--white-100);
-}
+/*a{*/
+/*    font-size:18px;*/
+/*    line-height: 31px;*/
+/*    color: var(--white-100);*/
+/*}*/

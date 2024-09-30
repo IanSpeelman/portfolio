@@ -1,8 +1,61 @@
 import styles from './index.module.css'
 import Link from '../../Components/Link/index'
 import { icons } from '../../Utils/icons'
+import { useState } from 'react'
+
 
 export default function Contact() {
+    const [email, setEmail] = useState("")
+    const [message, setMessage] = useState("")
+
+    async function handleSubmit() {
+        const url = 'http://api.mailjet.com/v3.1/send';
+        const apiKey = import.meta.env.VITE_API_KEY;
+        const secretKey = import.meta.env.VITE_SECRET_KEY;
+
+        const headers = {
+            'Content-Type': 'application/json',
+            'Authorization': 'Basic ' + btoa(apiKey + ':' + secretKey),
+
+        }
+
+        const body = JSON.stringify({
+            Messages: [
+                {
+                    From: {
+                        Email: 'ianspeelman@gmail.com',
+                        Name: 'Ian Speelman'
+                    },
+                    To: [
+                        {
+                            Email: 'ianspeelman@gmail.com',
+                            Name: 'meister'
+                        }
+                    ],
+                    Subject: 'New Message from Portfolio Form',
+                    TextPart: `message is from: ${email} \n ${message}`,
+                    HTMLPart: `message is from: ${email} \n ${message}`
+                }
+            ]
+        });
+
+        try {
+            const result = await fetch(url, {
+                mode: 'cors',
+                method: 'POST',
+                headers: headers,
+                body: body
+            })
+            const data = await result.json();
+            console.log(data)
+        }
+        catch (err) {
+            console.log(err)
+        }
+        setEmail('')
+        setMessage('')
+    }
+
 
     return (
         <div className={styles.container} id='contact'>
@@ -10,10 +63,10 @@ export default function Contact() {
             <div className={styles.center}>
                 <div className={styles.form}>
                     <label htmlFor="email">E-Mail:</label>
-                    <input className={styles.input} type='text' id='email' placeholder='Enter E-Mail' />
+                    <input className={styles.input} value={email} onChange={(e) => setEmail(e.target.value)} type='text' id='email' placeholder='Enter E-Mail' />
                     <label htmlFor="message">Message:</label>
-                    <textarea className={styles.input} rows={12} id='message' placeholder='Enter Message'></textarea>
-                    <button className={styles.button}>Send!</button>
+                    <textarea className={styles.input} rows={12} value={message} onChange={(e) => setMessage(e.target.value)} id='message' placeholder='Enter Message'></textarea>
+                    <button className={styles.button} onClick={handleSubmit}>Send!</button>
                 </div>
                 <div className={styles.line}>
                 </div>
