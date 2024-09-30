@@ -6,7 +6,7 @@ import { icons } from '../../Utils/icons'
 
 export default function Hero() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='introduction'>
             <div className={styles.hero}>
                 <div className={styles.imagecontainer}>
                     <img className={styles.image} src={profile_picture} alt='Profile picture' />
