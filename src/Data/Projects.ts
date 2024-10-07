@@ -16,12 +16,12 @@ export const projects = [
         tags: "Python, HTML,CSS, Javascript, Sqlite",
     },
     {
-        title: "Todo App",
-        description: "This project is a simple to-do application built with React. It offers users a clean and intuitive interface to manage their tasks effectively. One of the unique features of this app is the integration of unit tests directly within the application. Users can choose to run the provided unit tests and view the code by which they run. This makes it an excellent tool for productivity, learning, and showcasing best practices in React development and testing.",
-        image: "Todo.png",
-        github: "https://github.com/IanSpeelman/todo-with-unit-testing",
-        demo: "https://todo.ianspeelman.com",
-        tags: "React, Javascript, Unit testing",
+        title: "Tik-Tactics",
+        description: "Tik-Tactics is a real-time, multiplayer Tic-Tac-Toe game that lets users create or join rooms to play against friends. Built with a .NET backend and React frontend, it uses SignalR WebSockets for fast, two-way communication, ensuring smooth and interactive gameplay. Perfect for anyone who enjoys the classic game with a competitive twist.",
+        image: "TikTactics.png",
+        github: "https://github.com/IanSpeelman/TikTactics",
+        demo: "https://tiktactics.ianspeelman.com",
+        tags: ".NET,React,SignalR,WebSockets,C#,Real-time",
     },
 
 ]
