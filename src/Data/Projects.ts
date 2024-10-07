@@ -22,7 +22,5 @@ export const projects = [
         github: "https://github.com/IanSpeelman/Recipe_picker",
         demo: "https://recipes.ianspeelman.com",
         tags: "Python, HTML,CSS, Javascript, Sqlite",
-    },
-
-
+    }
 ]
