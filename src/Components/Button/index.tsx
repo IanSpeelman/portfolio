@@ -7,7 +7,7 @@ type ButtonProps = {
 }
 
 export default function Button({ text, link, icon }: ButtonProps) {
-    return <a className={styles.link} href={link}>
+    return <a target='_blank' className={styles.link} href={link}>
         <svg width="0" height="0">
             <defs>
                 <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
