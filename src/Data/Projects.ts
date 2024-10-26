@@ -1,5 +1,13 @@
 export const projects = [
     {
+        title: "FikaFinds (Under Construction)",
+        description: "FikaFinds is more than just an e-commerce platform for Swedish trinkets it's my journey into modern development practices. While customers can browse authentic Scandinavian goods, behind the scenes I'm exploring professional software development through microservices architecture. From containerizing the entire application with Docker to implementing automated testing and CI/CD pipelines, this project serves as my sandbox for industry-standard tools. Through FikaFinds, I'm gaining hands-on experience with the same technologies that power large-scale applications, making each feature addition a step towards mastering real-world development practices.",
+        image: "FikaFinds.png",
+        github: "https://github.com/IanSpeelman/FikaFinds-ui",
+        demo: "",
+        tags: "Node.JS,Express,React,Postgres,Microservices,Docker,REST,Ecommerce",
+    },
+    {
         title: "Tik-Tactics",
         description: "Tik-Tactics is a real-time, multiplayer Tic-Tac-Toe game that lets users create or join rooms to play against friends. Built with a .NET backend and React frontend, it uses SignalR WebSockets for fast, two-way communication, ensuring smooth and interactive gameplay. Perfect for anyone who enjoys the classic game with a competitive twist.",
         image: "TikTactics.png",

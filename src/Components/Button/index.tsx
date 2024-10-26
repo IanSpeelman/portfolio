@@ -7,6 +7,7 @@ type ButtonProps = {
 }
 
 export default function Button({ text, link, icon }: ButtonProps) {
+    if (!link) return
     return <a target='_blank' className={styles.link} href={link}>
         <svg width="0" height="0">
             <defs>
@@ -22,5 +23,4 @@ export default function Button({ text, link, icon }: ButtonProps) {
         }
         <p className={styles.text}>{text}</p>
     </a>
-
 }
