@@ -32,6 +32,9 @@
     gap: 32px;
     width: fit-content;
 }
+.mobile{
+    display: none;
+}
 
 @media screen and (max-width: 1150px){
     .container{
